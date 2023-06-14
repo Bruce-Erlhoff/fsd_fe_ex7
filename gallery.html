@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
+    <style>
+      .navbar-custom {
+        background-color: darkslateblue;
+      }
+
+      .container-custom {
+        background-color: cornsilk;
+        padding: 30px;
+      }
+      .bg-cornsilk {
+        background-color: cornsilk;
+      }
+      .h6-custom {
+        padding-top: 20px;
+      }
+      .navbar-space {
+        margin-left: 5px;
+        margin-right: 5px;
+      }
+    </style>
+    <title>My Image Gallery</title>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <br />
+      <nav class="navbar navbar-expand-md navbar-dark navbar-custom">
+        <div class="container">
+          <a class="navbar-brand" href="#"
+            ><i class="fa-solid fa-person-hiking"></i></i>  Homegroaners, Inc.</a
+          >
+          <button
+            class="navbar-toggler d-lg-none"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#collapsibleNavId"
+            aria-controls="collapsibleNavId"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="collapsibleNavId">
+            <ul class="navbar-nav me-auto mt-2 mt-lg-0">
+              <li class="nav-item navbar-space">
+                <a class="nav-link active" href="#" aria-current="page"
+                  ><i class="fa-solid fa-house"></i> Home
+                  <span class="visually-hidden">(current)</span></a
+                >
+              </li>
+
+              <li class="nav-item dropdown navbar-space">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="dropdownId"
+                  data-bs-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  <i class="fa-solid fa-list"></i> About Us</a
+                >
+                <div class="dropdown-menu" aria-labelledby="dropdownId">
+                  <a class="dropdown-item" href="#">We love furry friends</a>
+                  <a class="dropdown-item" href="#">We love Mountains</a>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <i class="fa-solid fa-info"></i> Products</a
+                >
+              </li>
+              <li class="nav-item navbar-space">
+                <a class="nav-link" href="#"
+                  ><i class="fa-regular fa-address-card"></i> Contact Us</a
+                >
+              </li>
+            </ul>
+            <!-- <form class="d-flex my-2 my-lg-0">
+              <input
+                class="form-control me-sm-2"
+                type="text"
+                placeholder="Search"
+              />
+              <button
+                class="btn btn-outline-success my-2 my-sm-0"
+                type="submit"
+              >
+                Search
+              </button>
+            </form> -->
+          </div>
+        </div>
+      </nav>
+
+      <div class="container-fluid container-custom">
+        <!-- if "col" specified, it defaults to "xs"-->
+        <div class="row">
+          <div class="col-sm bg-cornsilk">
+            <h6 class="h6-custom">Shanti the Baby</h6>
+            <img src="images/ShantiPup.jpg" alt="Shanti Pup" width="100%" />
+          </div>
+          <div class="col-sm bg-cornsilk">
+            <h6 class="h6-custom">Shanti the Pup</h6>
+            <img src="images/ShantiPup2.jpg" alt="Shanti Pup 2" width="100%" />
+          </div>
+          <div class="col-sm bg-cornsilk">
+            <h6 class="h6-custom">Shanti the Dog</h6>
+            <img src="images/ShantiDog.jpg" alt="Shanti the Dog" width="100%" />
+          </div>
+          <div class="col-sm bg-cornsilk">
+            <h6 class="h6-custom">Mogie the Cat</h6>
+            <img src="images/Mogie.jpg" alt="Mogie the cat" width="100%" />
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-sm bg-cornsilk">
+            <h6 class="h6-custom">Yosemite</h6>
+            <img src="images/TheMerced.JPG" alt="Merced River" width="100%" />
+          </div>
+          <div class="col-sm bg-cornsilk">
+            <h6 class="h6-custom">Vernal Falls</h6>
+            <img src="images/VernalFalls.jpg" alt="Vernal Falls" width="100%" />
+          </div>
+          <div class="col-sm bg-cornsilk">
+            <h6 class="h6-custom">Ottoway Lake</h6>
+            <img src="images/OttowayLake.jpg" alt="Ottoway Lake" width="100%" />
+          </div>
+          <div class="col-sm bg-cornsilk">
+            <h6 class="h6-custom">Mister Marmot</h6>
+            <img src="images/marmot.jpg" alt="Picture of Marmot" width="100%" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
